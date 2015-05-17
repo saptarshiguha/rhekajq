@@ -1,0 +1,3 @@
+
+PKG_LIBS=-ljq `pkg-config --libs protobuf` `pkg-config --cflags protobuf`
+OBJECTS = rjq.o hekastream.o message.pb.o
