@@ -6,4 +6,5 @@ Date: 2015-05-17
 Author: Saptarshi Guha
 Maintainer: Satarshi Guha <sguha@mozilla.com>
 Description: This packages reads and parses a file containing Mozilla Heka Frames. It also contains functions to use JQ queries (see  http://stedolan.github.io/jq/tutorial/)
+URL: http://stedolan.github.io/jq/, https://hekad.readthedocs.org/en/latest/message/index.html#stream-framing
 License: GPL 3
