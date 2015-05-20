@@ -89,7 +89,7 @@ processTelemetryV4 <- function(conn,streaming=FALSE,json=FALSE,...){
 #' @return the handle itself
 #' @export
 jqinit <- function(){
-    v <- .Call("rjqinit",NULL)
+    v <- .Call("rjqinit",NULL,PACKAGE="rhekajq")
     options(jqhandle = v)
     v
 }

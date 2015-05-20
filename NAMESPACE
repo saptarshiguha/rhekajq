@@ -6,3 +6,16 @@ export(jqpp)
 export(jqquery)
 export(processTelemetryV4)
 export(rhStringMapValues)
+rhekadll = useDynLib(rhekajq,
+    initializeWithFile,
+    getGrowth,
+    getNRead,
+    getMbytes,
+    getOneObjectFromFile,
+    parseFramesFromArray,
+    mapvalueConcat,
+    rjqinit,
+    rjqprogargs,
+    rjqparse,
+    rjpretty)
+    

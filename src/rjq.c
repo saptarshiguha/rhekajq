@@ -5,7 +5,11 @@
 #include <Rmath.h>
 #include <R_ext/Rdynload.h>
 
-/* extern "C" { */
+
+// #ifdef __cplusplus
+// extern "C" {
+// #endif
+  
 #include <jq.h>
 #include <jv.h>
 
@@ -29,7 +33,7 @@ SEXP  mapvalueConcat(SEXP ext,SEXP s){
     t=t+ll[i];
   }
   if( t> c->size){
-    c->off = realloc(c->off, t*1.5);
+    c->off = (char *)realloc(c->off, t*1.5);
     if(!c->off) Rf_error("FATAL: could not make  map.value string");
     c->size = t*1.5;
   }
@@ -176,4 +180,6 @@ SEXP  mapvalueConcat(SEXP ext,SEXP s){
     return(r);
   }
 
-/* } */
+// #ifdef __cplusplus
+// }
+// #endif

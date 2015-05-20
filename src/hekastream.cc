@@ -36,7 +36,7 @@ void CaptureLogInLibrary(LogLevel level, const char* filename, int line,
 #define DATASIZE 1024*1024
 #define GROWDATA 1.5
 
-char *mapvaluestr;
+
 extern "C" {
   // great docs
   // http://stackoverflow.com/questions/7032617/storing-c-objects-in-r
