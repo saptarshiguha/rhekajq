@@ -12,10 +12,11 @@ rhekadll = useDynLib(rhekajq,
     getNRead,
     getMbytes,
     getOneObjectFromFile,
-    parseFramesFromArray,
-    mapvalueConcat,
-    rjqinit,
-    rjqprogargs,
-    rjqparse,
-    rjpretty)
+    parseFramesFromArray
+    ## mapvalueConcat,
+    ## rjqinit,
+    ## rjqprogargs,
+    ## rjqparse,
+    ## rjpretty
+                     )
     
